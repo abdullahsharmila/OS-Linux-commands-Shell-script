@@ -24,41 +24,50 @@ Testing the commands for the desired output.
 ### Create the following files file1, file2 as follows:
 cat > file1
 ```
-chanchal singhvi
-c.k. shukla
-s.n. dasgupta
-sumit chakrobarty
-^d
+abdullah
+ameera
+sharmila
+rahman khan 
 ```
 cat > file2
 ```
-anil aggarwal
-barun sengupta
-c.k. shukla
-lalit chowdury
-s.n. dasgupta
-^d
+rishi
+roshan
+nemalesh
+harish
 ```
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/315929ea-6035-482e-9822-f3446d2a6554)
+
 
 
 
 cat < file2
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/a4ca8469-e464-43b3-8f91-9f4207d0a640)
+
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/4bd5e8ea-9af5-4c15-805d-8222561ced5a)
+
+
  
 comm file1 file2
  ## OUTPUT
+ ![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/ece0d724-7583-441a-8fb1-03bbd1bfa685)
+
+ 
 
  
 diff file1 file2
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/99f12f20-7837-4075-8264-457d5372638d)
+
 
 
 #Filters
@@ -82,6 +91,8 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/60c8d372-83d3-4307-8369-09b5273b9869)
+
 
 
 
@@ -93,6 +104,8 @@ cut -d "|" -f 1 file22
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/4eae1332-bad2-4770-be2f-698e914e6d47)
+
 
 
 cat < newfile 
@@ -107,39 +120,54 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/77eace65-97f0-40de-87c6-834e51cd2085)
+
 
 
 
 grep hello newfile 
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/6b797d43-1e89-4922-8948-7c8a0d823950)
+
 
 
 
 
 grep -v hello newfile 
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/bddeeb53-aa19-43aa-9e21-abd0cfebcfff)
+
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/a289ddea-46a2-4a02-908d-98a2661dd554)
+
 
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/73f2f866-7bb3-4955-a33b-343e3f2af6f6)
+
 
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/0680bd1a-5f3c-4552-9fbe-43c984a91ad4)
+
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![image](https://github.com/gowriganeshns/OS-Linux-commands-Shell-script/assets/145742459/e8002002-a810-41ad-80ba-fe692a22a62e)
+
+
 
 
 cat < newfile 
